@@ -145,7 +145,7 @@ func (c *NotifyConfig) Verify() error {
 	}
 
 	for _, severity := range c.Severities {
-		if severity < 1 || severity > 3 {
+		if severity < 1 || severity > 4 {
 			return errors.New("invalid severity level")
 		}
 	}
